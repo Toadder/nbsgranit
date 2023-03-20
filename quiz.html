@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Помощник</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230320225622" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230320225622">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- .header -->
+<header class="header">
+	<div class="header__container">
+		<div class="header__body">
+
+			<div class="header__top">
+				<div class="header__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+				</div>
+				<div class="header__actions">
+					<a href='#categories' class="header__anchor anchor-link">
+						<button type='button'><span></span></button>
+						<span>Категории</span>
+					</a>
+					<form class="header__search">
+						<input type="text" placeholder='Введите запрос'>
+						<button type='submit' class="_icon-search"></button>
+					</form>
+				</div>
+				<div class="header__main">
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-box"></div>
+						<span>Заказы</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-heart"></div>
+						<span>Избранное</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="header__cart">
+							<div class="_icon-cart"></div>
+							<div class="header__count count">10</div>
+						</div>
+						<span>Корзина</span>
+					</a>
+					<a href="tel:+74996511743" class="header__link header__phone">
+						<div class="_icon-phone"></div>
+						<span>+7 (499) 651-17-43</span>
+					</a>
+					<a href="#popupAuth" class="header__auth popup-link">
+						<span>Войти</span>
+						<div class="_icon-user"></div>
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="header__location">
+					<div class="_icon-location"></div>
+					<span>Москва</span>
+				</div>
+				<div class="header__mobile">
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li><a class='active' href="./index.html">Главная</a></li>
+							<li><a href="./catalog.html">Каталог</a></li>
+							<li><a href="./production.html">Производство</a></li>
+							<li><a href="./landscaping.html">Благоустройство</a></li>
+							<li><a href="./installation.html">Установка</a></li>
+							<li><a href="./installation.html">Доставка</a></li>
+							<li><a href="./quiz.html">О нас</a></li>
+							<li><a href="./contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- /.header -->
+
+		<!-- .main -->
+		<main class="main">
+			<!-- .quiz -->
+<section class="quiz">
+	<div class="quiz__container">
+		<div class="quiz__body">
+			<h1 class="quiz__title page-title">
+				Помощник в подборе
+			</h1>
+			<p class="quiz__text page-text">
+				Если случилось так, что на данный момент вы еще затрудняетесь с подбором необходимых вам товаров, мы создали
+				специальную анкету, благодаря которой мы сможем подобрать все, исходя из бюджета и пожеланий.
+			</p>
+
+			<div class="quiz__card card-quiz">
+				<div class="card-quiz__img">
+					<picture><source srcset="img/quiz/01.webp" type="image/webp"><img src="img/quiz/01.jpg" alt="Помощник в подборе "></picture>
+				</div>
+				<div class="card-quiz__content">
+					<p class="card-quiz__text page-text">
+						Ответьте на вопросы, чтобы мы могли вам помочь вам в подборе
+					</p>
+
+					<div class="card-quiz__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="card-quiz__slide swiper-slide">
+								<div class="card-quiz__title page-title">
+									Вопрос №1
+								</div>
+								<p class="card-quiz__question">
+									Как давно произошла трагедия, которая стала причиной обращения к нам?
+								</p>
+								<div class="card-quiz__answer">
+									<div class="card-quiz__input input card-quiz__item">
+										<input type="text" placeholder='Введите ответ'>
+										<img src="img/quiz/01.svg" alt="Keyboard">
+									</div>
+								</div>
+							</div>
+
+							<div class="card-quiz__slide swiper-slide">
+								<div class="card-quiz__title page-title">
+									Вопрос №2
+								</div>
+								<p class="card-quiz__question">
+									Что вы планируете установить?
+								</p>
+								<div class="card-quiz__answer">
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox1'>
+										<label for="checkbox1">
+											<span>Гранитный памятник</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox2'>
+										<label for="checkbox2">
+											<span>Мемориальный комплекс</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox3'>
+										<label for="checkbox3">
+											<span>Металлическую ограду</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox4'>
+										<label for="checkbox4">
+											<span>Гранитный цоколь</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-quiz__slide swiper-slide">
+								<div class="card-quiz__title page-title">
+									Вопрос №3
+								</div>
+								<p class="card-quiz__question">
+									Как давно произошла трагедия, которая стала причиной обращения к нам?
+								</p>
+								<div class="card-quiz__answer">
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox5'>
+										<label for="checkbox5">
+											<span>ФИО (Ручная работа) (+4500 ₽)</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox6'>
+										<label for="checkbox6">
+											<span>Портрет (Ручная работа) (+8000 ₽)</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox7'>
+										<label for="checkbox7">
+											<span>Фото на керамике (Вырез гнезда и вклейка) (+3700₽)</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox8'>
+										<label for="checkbox8">
+											<span>Эпитафия (Ручная работа) *за букву (+100 ₽)</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox">
+										<input type="checkbox" id='checkbox9'>
+										<label for="checkbox9">
+											<span>Кресты (Ручная работа) (+1500 ₽)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-quiz__slide swiper-slide">
+								<div class="card-quiz__title page-title">
+									Вопрос №4
+								</div>
+								<p class="card-quiz__question">
+									Какой цвет материала вам нравиться?
+								</p>
+								<div class="card-quiz__answer card-quiz__grid">
+									<div class="card-quiz__checkbox card-quiz__item checkbox checkbox-center">
+										<input type="checkbox" id='checkbox10'>
+										<label for="checkbox10">
+											<span class='checkbox__flex'>
+												<picture><source srcset="img/quiz/01.webp" type="image/webp"><img src="img/quiz/01.png" alt="Карельский гранит"></picture>
+												<span>Карельский гранит</span>
+											</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox checkbox-center">
+										<input type="checkbox" id='checkbox11'>
+										<label for="checkbox11">
+											<span class='checkbox__flex'>
+												<picture><source srcset="img/quiz/02.webp" type="image/webp"><img src="img/quiz/02.png" alt="Дымовский гранит"></picture>
+												<span>Дымовский гранит</span>
+											</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox checkbox-center">
+										<input type="checkbox" id='checkbox12'>
+										<label for="checkbox12">
+											<span class='checkbox__flex'>
+												<picture><source srcset="img/quiz/03.webp" type="image/webp"><img src="img/quiz/03.png" alt="Мансуровский гранит"></picture>
+												<span>Мансуровский гранит</span>
+											</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox checkbox-center">
+										<input type="checkbox" id='checkbox13'>
+										<label for="checkbox13">
+											<span class='checkbox__flex'>
+												<picture><source srcset="img/quiz/04.webp" type="image/webp"><img src="img/quiz/04.png" alt="Лезниковский гранит (+150%)"></picture>
+												<span>Лезниковский гранит (+150%)</span>
+											</span>
+										</label>
+									</div>
+
+									<div class="card-quiz__checkbox card-quiz__item checkbox checkbox-center">
+										<input type="checkbox" id='checkbox14'>
+										<label for="checkbox14">
+											<span class='checkbox__flex'>
+												<picture><source srcset="img/quiz/05.webp" type="image/webp"><img src="img/quiz/05.png" alt="Змеевик гранит (+250%)"></picture>
+												<span>Змеевик гранит (+250%)</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-quiz__slide swiper-slide">
+								<div class="card-quiz__title page-title">
+									Вопрос №5
+								</div>
+								<p class="card-quiz__question">
+									Выберите размер места захоронения
+								</p>
+								<div class="card-quiz__answer">
+									<div class="card-quiz__radios radios card-quiz__item">
+										<div class="card-quiz__radio radio">
+											<input name='sizeRadio' type="radio" id='radio1'>
+											<label for="radio1">
+												2,4х3
+											</label>
+										</div>
+
+										<div class="card-quiz__radio radio">
+											<input name='sizeRadio' type="radio" id='radio2'>
+											<label for="radio2">
+												3х3
+											</label>
+										</div>
+
+										<div class="card-quiz__radio radio">
+											<input name='sizeRadio' type="radio" id='radio3'>
+											<label for="radio3">
+												3,5х3,5
+											</label>
+										</div>
+
+										<div class="card-quiz__radio radio">
+											<input name='sizeRadio' type="radio" id='radio4'>
+											<label for="radio4">
+												4х4
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-quiz__slide swiper-slide">
+								<div class="card-quiz__title page-title">
+									Получить результат
+								</div>
+								<p class="card-quiz__question">
+									Введите свой контакты, чтобы мы могли отравить вам результат
+								</p>
+								<div class="card-quiz__answer">
+									<div class="input card-quiz__item">
+										<input type="text" placeholder='Ваше имя'>
+									</div>
+									<div class="input card-quiz__item">
+										<input type="tel" data-tel-input placeholder='Ваш номер телефона'>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="card-quiz__navigation">
+						<a href="" class="card-quiz__link btn card-quiz__btn btn-transparent">
+							Связаться со специалистом
+						</a>
+						<button type='button' class="card-quiz__btn btn btn-transparent card-quiz__prev">
+							Предыдущий вопрос
+						</button>
+						<button type='button' class="card-quiz__btn btn card-quiz__next">
+							Следующий вопрос
+						</button>
+						<button type='submit' class="card-quiz__submit  card-quiz__btn btn">Получить результат</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- /.quiz -->
+		</main>
+		<!-- /.main -->
+
+		<!-- .footer -->
+<footer class="footer">
+	
+	<div class="footer__top top-footer">
+		<div class="top-footer__container">
+			<div class="top-footer__body">
+				<div class="top-footer__main">
+					<div class="top-footer__logo">
+						<picture><source srcset="img/logo_white.webp" type="image/webp"><img src="img/logo_white.png" alt="NBS Granit"></picture>
+					</div>
+					<p class="top-footer__text">
+						ИЗГОТОВЛЕНИЕ ПАМЯТНИКОВ И МЕМОРИАЛЬНЫХ КОМПЛЕКСОВ ИЗ ГРАНИТА
+					</p>
+				</div>
+				<nav class="top-footer__nav">
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Меню
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Главная</a></li>
+							<li><a href="">Каталог</a></li>
+							<li><a href="">
+								Solutions 
+								<span class='top-footer__new'>
+									New
+								</span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Компания
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">О нас</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Доставка и оплата
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Установка</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Категории
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Металлические ограды</a></li>
+							<li><a href="">Гранитные цоколя</a></li>
+							<li><a href="">Мемориальные комплексы</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom bottom-footer">
+		<div class="bottom-footer__container">
+			<div class="bottom-footer__body">
+				<div class="bottom-footer__copyright">
+					© 2023 NBS Granit. All rights reserved.
+				</div>
+				<a href="" class="bottom-footer__privacy">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<!-- /.footer -->
+	</div>
+
+	<div class="popup popup-enter" id="popupAuth">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Личный кабинет
+			</div>
+			<p class="popup-enter__text">
+				Добро пожаловать, введите данные, чтобы войти в личный кабинет.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Email</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<div class='popup-enter__flex'>
+						<div>Пароль</div>
+						<a href='' class='popup-enter__recovery'>
+							Забыли пароль?
+						</a>
+					</div>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пожалуйста введите пароль
+					</div>
+				</div>
+				<div class="popup-enter__checkbox">
+					<input value='' type="checkbox" id="rememberMe">
+					<label for="rememberMe">
+						<span>Запомнить меня</span>
+					</label>
+				</div>
+				<button class="popup-enter__submit btn">
+					Войти
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Нет аккаунта? <a href="#popupReg" class='popup-link'>Зарегистрироваться</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="popup popup-enter" id="popupReg">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Регистрация
+			</div>
+			<p class="popup-enter__text">
+				Введите свои данные, чтобы зарегистрироваться.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Ваше имя</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваш телефон</p>
+					<div class="popup-enter__input">
+						<input value='' type="tel" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваша почта</p>
+					<div class="popup-enter__input">
+						<input value='' type="email" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Введите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Повторите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пароли не совпадают
+					</div>
+				</div>
+				<button class="popup-enter__submit btn">
+					Регистрация
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Уже есть аккаунт? <a href="#popupAuth" class='popup-link'>Войти</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230320225622"></script>
+	<script src="js/app.min.js?_v=20230320225622"></script>
+</body>
+
+</html>

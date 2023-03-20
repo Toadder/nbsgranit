@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Товар</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230320225622" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230320225622">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- .header -->
+<header class="header">
+	<div class="header__container">
+		<div class="header__body">
+
+			<div class="header__top">
+				<div class="header__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+				</div>
+				<div class="header__actions">
+					<a href='#categories' class="header__anchor anchor-link">
+						<button type='button'><span></span></button>
+						<span>Категории</span>
+					</a>
+					<form class="header__search">
+						<input type="text" placeholder='Введите запрос'>
+						<button type='submit' class="_icon-search"></button>
+					</form>
+				</div>
+				<div class="header__main">
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-box"></div>
+						<span>Заказы</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-heart"></div>
+						<span>Избранное</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="header__cart">
+							<div class="_icon-cart"></div>
+							<div class="header__count count">10</div>
+						</div>
+						<span>Корзина</span>
+					</a>
+					<a href="tel:+74996511743" class="header__link header__phone">
+						<div class="_icon-phone"></div>
+						<span>+7 (499) 651-17-43</span>
+					</a>
+					<a href="#popupAuth" class="header__auth popup-link">
+						<span>Войти</span>
+						<div class="_icon-user"></div>
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="header__location">
+					<div class="_icon-location"></div>
+					<span>Москва</span>
+				</div>
+				<div class="header__mobile">
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li><a class='active' href="./index.html">Главная</a></li>
+							<li><a href="./catalog.html">Каталог</a></li>
+							<li><a href="./production.html">Производство</a></li>
+							<li><a href="./landscaping.html">Благоустройство</a></li>
+							<li><a href="./installation.html">Установка</a></li>
+							<li><a href="./installation.html">Доставка</a></li>
+							<li><a href="./quiz.html">О нас</a></li>
+							<li><a href="./contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- /.header -->
+
+		<!-- .main -->
+		<main class="main">
+			<!-- .items -->
+<section class="item">
+	<!-- .crumbs -->
+<div class="crumbs">
+	<div class="crumbs__container">
+		<div class="crumbs__body">
+			<ul class="crumbs__list">
+				<li >
+					<a href="#!">Каталог</a>
+				</li>
+				<li><a href="#!">Мемориальные комплексы</a></li>
+				<li>Мемориальный комплекс mk-32 </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- /.crumbs -->
+
+	<div class="item__container">
+		<div class="item__body">
+
+			<div class="item__left left-item">
+				<div class="left-item__view">
+					<div class="left-item__thumbs">
+						<picture><source srcset="img/item/item/01_small.webp" type="image/webp"><img class='left-item__thumb active' src="img/item/item/01_small.jpg" alt=""></picture>
+						<picture><source srcset="img/item/item/02_small.webp" type="image/webp"><img class="left-item__thumb" src="img/item/item/02_small.jpg" alt=""></picture>
+					</div>
+					<picture><source srcset="img/item/item/01.webp" type="image/webp"><img class="left-item__img" src="img/item/item/01.jpg" alt=""></picture>
+				</div>
+				<div class="left-item__btns">
+					<a href="" class="left-item__cart btn">
+						Добавить в корзину
+					</a>
+					<a href="" class="left-item__favorite">
+						<span class="_icon-heart"></span>
+						<span>Добавить в избранное</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="item__right right-item">
+				<div class="right-item__status">
+					Новое!
+				</div>
+				<h1 class="right-item__title">
+					Мемориальный комплекс mk-32
+				</h1>
+				<div class="right-item__price">
+					₽ 540 000
+				</div>
+				<div class="right-item__id">
+					id 107293
+				</div>
+				<div class="right-item__properties">
+					<div class="right-item__property">
+						Срок изготовления <span>14 дней</span>
+					</div>
+					<div class="right-item__property">
+						Гарантия на гранитное изделие <span>25 лет</span>
+					</div>
+				</div>
+
+				<div class="right-item__flex">
+					<div class="right-item__column">
+						<div class="right-item__block">
+							<p>
+								Размер
+							</p>
+							<div class="radios right-item__option">
+								<div class="radio">
+									<input name="sizeRadio" type="radio" id="radio1" checked>
+									<label for="radio1">
+										2,4х3
+									</label>
+								</div>
+
+								<div class="radio">
+									<input name="sizeRadio" type="radio" id="radio2">
+									<label for="radio2">
+										3х3
+									</label>
+								</div>
+
+								<div class="radio">
+									<input name="sizeRadio" type="radio" id="radio3">
+									<label for="radio3">
+										3,5х3,5
+									</label>
+								</div>
+
+								<div class="radio">
+									<input name="sizeRadio" type="radio" id="radio4">
+									<label for="radio4">
+										4х4
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="right-item__block">
+							<p>
+								С установкой
+							</p>
+							<div class="right-item__option">
+								<div class="checkbox">
+									<input type="radio" name='set' id="set1">
+									<label for="set1">
+										<span>Да (+5000₽)</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input type="radio" name='set' id="set2">
+									<label for="set2">
+										<span>Нет</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="right-item__block">
+							<p>
+								Оформление
+							</p>
+							<div class="right-item__option">
+								<div class="checkbox">
+									<input type="checkbox" id="manage1">
+									<label for="manage1">
+										<span>ФИО (Ручная работа) (+4500 ₽)</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" id="manage2">
+									<label for="manage2">
+										<span>Портрет (Ручная работа) (+8000 ₽)</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" id="manage3">
+									<label for="manage3">
+										<span>Фото на керамике (Вырез гнезда и вклейка) (+3700₽)</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" id="manage4">
+									<label for="manage4">
+										<span>Эпитафия (Ручная работа) *за букву (+100 ₽)</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" id="manage5">
+									<label for="manage5">
+										<span>Кресты (Ручная работа) (+1500 ₽)</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="right-item__block">
+							<p>
+								Скидки
+							</p>
+							<div class="right-item__option">
+								<div class="checkbox">
+									<input type="radio" name='sale' id="sale1">
+									<label for="sale1">
+										<span>Есть сертификат 5%</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input type="radio" name='sale' id="sale2">
+									<label for="sale2">
+										<span>Пенсионерам 7%</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="right-item__column">
+						<div class="right-item__block">
+							<p>
+								Материал
+							</p>
+							<div class="right-item__option">
+								<div class="checkbox checkbox-center">
+									<input type="checkbox" id="checkbox10">
+									<label for="checkbox10">
+										<span class="checkbox__flex">
+											<picture><source srcset="img/quiz/01.webp" type="image/webp"><img src="img/quiz/01.png" alt="Карельский гранит"></picture>
+											<span>Карельский гранит</span>
+										</span>
+									</label>
+								</div>
+
+								<div class="checkbox checkbox-center">
+									<input type="checkbox" id="checkbox11">
+									<label for="checkbox11">
+										<span class="checkbox__flex">
+											<picture><source srcset="img/quiz/02.webp" type="image/webp"><img src="img/quiz/02.png" alt="Дымовский гранит"></picture>
+											<span>Дымовский гранит</span>
+										</span>
+									</label>
+								</div>
+
+								<div class="checkbox checkbox-center">
+									<input type="checkbox" id="checkbox12">
+									<label for="checkbox12">
+										<span class="checkbox__flex">
+											<picture><source srcset="img/quiz/03.webp" type="image/webp"><img src="img/quiz/03.png" alt="Мансуровский гранит"></picture>
+											<span>Мансуровский гранит</span>
+										</span>
+									</label>
+								</div>
+
+								<div class="checkbox checkbox-center">
+									<input type="checkbox" id="checkbox13">
+									<label for="checkbox13">
+										<span class="checkbox__flex">
+											<picture><source srcset="img/quiz/04.webp" type="image/webp"><img src="img/quiz/04.png" alt="Лезниковский гранит (+150%)"></picture>
+											<span>Лезниковский гранит (+150%)</span>
+										</span>
+									</label>
+								</div>
+
+								<div class="checkbox checkbox-center">
+									<input type="checkbox" id="checkbox14">
+									<label for="checkbox14">
+										<span class="checkbox__flex">
+											<picture><source srcset="img/quiz/05.webp" type="image/webp"><img src="img/quiz/05.png" alt="Змеевик гранит (+250%)"></picture>
+											<span>Змеевик гранит (+250%)</span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-item__bottom">
+					<div>Итоговая стоимость</div>
+					<div class="right-item__total">₽ 630 000</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- /.item -->
+			<div class="info">
+	<div class="info__container">
+		<div class="info__body" data-tabs=''>
+
+			<div class="info__wrapper">
+				<div class="info__items tabs">
+					<div class="info__tab tabs__tab">
+						Дополнительно
+					</div>
+					<div class="info__tab tabs__tab active">
+						Отзывы
+						<div class="info__count">157</div>
+					</div>
+					<div class="info__tab tabs__tab">
+						Доставка
+					</div>
+				</div>
+			</div>
+
+			<div class="info__contents contents">
+				<div class="info__content contents__content">
+					Дополнительно
+				</div>
+				<div class="info__content contents__content active">
+					<div class="info__reviews">
+						<div class="info__review review-info">
+							<div class="review-info__avatar">
+								<picture><source srcset="img/item/info/01.webp" type="image/webp"><img src="img/item/info/01.jpg" alt="Марина"></picture>
+							</div>
+							<div class="review-info__content">
+								<div class="review-info__stars">
+									<img src="img/item/info/star.svg" alt="star">
+									<img src="img/item/info/star.svg" alt="star">
+									<img src="img/item/info/star.svg" alt="star">
+									<img src="img/item/info/star_empty.svg" alt="star">
+									<img src="img/item/info/star_empty.svg" alt="star">
+								</div>
+								<p class="review-info__text">
+									Работа отличная!Аккуратно, чисто, лаконично.Понравилось, что поверхность плитки, которой замостили
+									основу, не гладкая. Это какую то свою эстетику добавляет.Хороший шрифт, не газетный. И форма памятника
+									(наполеон) облегчает общее впечатление, не просто прямоугольник.Стоимость рассчитали по элементам. Всё
+									делалось в обсуждении и без затягивания по времени.
+								</p>
+								<div class="review-info__name">
+									Марина
+								</div>
+								<div class="review-info__date">
+									30 октября 2022
+								</div>
+							</div>
+						</div>
+						<div class="info__review review-info">
+							<div class="review-info__avatar">
+								<picture><source srcset="img/item/info/02.webp" type="image/webp"><img src="img/item/info/02.jpg" alt="Константин"></picture>
+							</div>
+							<div class="review-info__content">
+								<div class="review-info__stars">
+									<img src="img/item/info/star.svg" alt="star">
+									<img src="img/item/info/star.svg" alt="star">
+									<img src="img/item/info/star.svg" alt="star">
+									<img src="img/item/info/star_empty.svg" alt="star">
+									<img src="img/item/info/star_empty.svg" alt="star">
+								</div>
+								<p class="review-info__text">
+									Работали с Николаем, выполняли благоустройство двух могил, одна из них со свежим захоронением. Мастер
+									приехал на объект, осмотрел могилы, сделал все необходимые замеры и прикинул ориентировочную
+									стоимость, давал разъяснения по каждому пункту. Николай всегда был на связи .Далее уже после
+									окончательного в выбора памятника, ограды и прочего сформировал договор с конечной стоимостью.
+									Основные трудности лично у нас были с получением разрешения на кладбище, но это от Николая мало
+									зависело.
+								</p>
+								<div class="review-info__name">
+									Константин
+								</div>
+								<div class="review-info__date">
+									9 октября 2022
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="info__loadmore">
+						<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M1.33325 0.583374C1.74747 0.583374 2.08325 0.91916 2.08325 1.33337V2.25856C3.06914 1.22671 4.45899 0.583374 5.99992 0.583374C8.76273 0.583374 11.0414 2.65115 11.3747 5.3239C11.426 5.73493 11.1343 6.10969 10.7233 6.16094C10.3123 6.2122 9.9375 5.92054 9.88625 5.50951C9.64542 3.57823 7.99667 2.08337 5.99992 2.08337C4.78785 2.08337 3.70343 2.63407 2.98458 3.50004H4.24992C4.66413 3.50004 4.99992 3.83583 4.99992 4.25004C4.99992 4.66425 4.66413 5.00004 4.24992 5.00004H1.33325C0.919038 5.00004 0.583252 4.66425 0.583252 4.25004V1.33337C0.583252 0.91916 0.919038 0.583374 1.33325 0.583374ZM1.27655 5.83914C1.68758 5.78788 2.06234 6.07954 2.11359 6.49057C2.35442 8.42185 4.00317 9.91671 5.99992 9.91671C7.21199 9.91671 8.29641 9.36601 9.01525 8.50004H7.74992C7.33571 8.50004 6.99992 8.16425 6.99992 7.75004C6.99992 7.33583 7.33571 7.00004 7.74992 7.00004H10.6666C11.0808 7.00004 11.4166 7.33583 11.4166 7.75004V10.6667C11.4166 11.0809 11.0808 11.4167 10.6666 11.4167C10.2524 11.4167 9.91659 11.0809 9.91659 10.6667V9.74152C8.9307 10.7734 7.54085 11.4167 5.99992 11.4167C3.23711 11.4167 0.958408 9.34893 0.625121 6.67618C0.573866 6.26515 0.865522 5.89039 1.27655 5.83914Z" />
+						</svg>
+						<span>Загрузить еще</span>
+					</button>
+				</div>
+				<div class="info__content contents__content">
+					Доставка
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+			<!-- .similar -->
+<section class="similar">
+	<div class="similar__container">
+		<div class="similar__body">
+
+			<h2 class="similar__title">
+				Похожие <span>товары</span>
+			</h2>
+			<div class="similar__items">
+				<div class="product">
+	<div class="product__actions">
+		<a href="" class="_icon-heart"></a>
+		<a href="" class="_icon-cart"></a>
+	</div>
+	<div class="product__img">
+		<picture><source srcset="img/partials/product/01.webp" type="image/webp"><img src="img/partials/product/01.jpg" alt="Мемориальный комплекс"></picture>
+	</div>
+	<div class="product__content">
+		<div class="product__title">
+			Мемориальный комплекс
+		</div>
+		<div class="product__price">
+			₽ 59000
+		</div>
+		<div class="product__review">
+			<div class="products__stars">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+			</div>
+			<div class="product__rating">144 отзыва</div>
+		</div>
+	</div>
+	<a href="./item.html" class="product__btn btn">Подробнее</a>
+</div>
+				<div class="product">
+	<div class="product__actions">
+		<a href="" class="_icon-heart"></a>
+		<a href="" class="_icon-cart"></a>
+	</div>
+	<div class="product__img">
+		<picture><source srcset="img/partials/product/02.webp" type="image/webp"><img src="img/partials/product/02.jpg" alt="DJI Phantom 4 Multispectral"></picture>
+	</div>
+	<div class="product__content">
+		<div class="product__title">
+			DJI Phantom 4 Multispectral
+		</div>
+		<div class="product__price">
+			₽ 7990
+		</div>
+		<div class="product__review">
+			<div class="products__stars">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+			</div>
+			<div class="product__rating">144 отзыва</div>
+		</div>
+	</div>
+	<a href="./item.html" class="product__btn btn">Подробнее</a>
+</div>
+				<div class="product">
+	<div class="product__actions">
+		<a href="" class="_icon-heart"></a>
+		<a href="" class="_icon-cart"></a>
+	</div>
+	<div class="product__img">
+		<picture><source srcset="img/partials/product/03.webp" type="image/webp"><img src="img/partials/product/03.jpg" alt="DJI Phantom 4 PRO"></picture>
+	</div>
+	<div class="product__content">
+		<div class="product__title">
+			DJI Phantom 4 PRO
+		</div>
+		<div class="product__price">
+			₽ 125000
+		</div>
+		<div class="product__review">
+			<div class="products__stars">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+			</div>
+			<div class="product__rating">144 отзыва</div>
+		</div>
+	</div>
+	<a href="./item.html" class="product__btn btn">Подробнее</a>
+</div>
+				<div class="product">
+	<div class="product__actions">
+		<a href="" class="_icon-heart"></a>
+		<a href="" class="_icon-cart"></a>
+	</div>
+	<div class="product__img">
+		<picture><source srcset="img/partials/product/01.webp" type="image/webp"><img src="img/partials/product/01.jpg" alt="Мемориальный комплекс"></picture>
+	</div>
+	<div class="product__content">
+		<div class="product__title">
+			Мемориальный комплекс
+		</div>
+		<div class="product__price">
+			₽ 59000
+		</div>
+		<div class="product__review">
+			<div class="products__stars">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+				<img src="img/partials/product/star_empty.svg" alt="Star">
+			</div>
+			<div class="product__rating">144 отзыва</div>
+		</div>
+	</div>
+	<a href="./item.html" class="product__btn btn">Подробнее</a>
+</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- /.similar -->
+		</main>
+		<!-- /.main -->
+
+		<!-- .footer -->
+<footer class="footer">
+	
+	<div class="footer__top top-footer">
+		<div class="top-footer__container">
+			<div class="top-footer__body">
+				<div class="top-footer__main">
+					<div class="top-footer__logo">
+						<picture><source srcset="img/logo_white.webp" type="image/webp"><img src="img/logo_white.png" alt="NBS Granit"></picture>
+					</div>
+					<p class="top-footer__text">
+						ИЗГОТОВЛЕНИЕ ПАМЯТНИКОВ И МЕМОРИАЛЬНЫХ КОМПЛЕКСОВ ИЗ ГРАНИТА
+					</p>
+				</div>
+				<nav class="top-footer__nav">
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Меню
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Главная</a></li>
+							<li><a href="">Каталог</a></li>
+							<li><a href="">
+								Solutions 
+								<span class='top-footer__new'>
+									New
+								</span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Компания
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">О нас</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Доставка и оплата
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Установка</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Категории
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Металлические ограды</a></li>
+							<li><a href="">Гранитные цоколя</a></li>
+							<li><a href="">Мемориальные комплексы</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom bottom-footer">
+		<div class="bottom-footer__container">
+			<div class="bottom-footer__body">
+				<div class="bottom-footer__copyright">
+					© 2023 NBS Granit. All rights reserved.
+				</div>
+				<a href="" class="bottom-footer__privacy">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<!-- /.footer -->
+	</div>
+
+	<div class="popup popup-enter" id="popupAuth">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Личный кабинет
+			</div>
+			<p class="popup-enter__text">
+				Добро пожаловать, введите данные, чтобы войти в личный кабинет.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Email</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<div class='popup-enter__flex'>
+						<div>Пароль</div>
+						<a href='' class='popup-enter__recovery'>
+							Забыли пароль?
+						</a>
+					</div>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пожалуйста введите пароль
+					</div>
+				</div>
+				<div class="popup-enter__checkbox">
+					<input value='' type="checkbox" id="rememberMe">
+					<label for="rememberMe">
+						<span>Запомнить меня</span>
+					</label>
+				</div>
+				<button class="popup-enter__submit btn">
+					Войти
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Нет аккаунта? <a href="#popupReg" class='popup-link'>Зарегистрироваться</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="popup popup-enter" id="popupReg">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Регистрация
+			</div>
+			<p class="popup-enter__text">
+				Введите свои данные, чтобы зарегистрироваться.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Ваше имя</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваш телефон</p>
+					<div class="popup-enter__input">
+						<input value='' type="tel" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваша почта</p>
+					<div class="popup-enter__input">
+						<input value='' type="email" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Введите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Повторите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пароли не совпадают
+					</div>
+				</div>
+				<button class="popup-enter__submit btn">
+					Регистрация
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Уже есть аккаунт? <a href="#popupAuth" class='popup-link'>Войти</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230320225622"></script>
+	<script src="js/app.min.js?_v=20230320225622"></script>
+</body>
+
+</html>

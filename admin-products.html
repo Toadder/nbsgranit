@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Админ-панель | Товары</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230320225622" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230320225622">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- .header -->
+<header class="header">
+	<div class="header__container">
+		<div class="header__body">
+
+			<div class="header__top">
+				<div class="header__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+				</div>
+				<div class="header__actions">
+					<a href='#categories' class="header__anchor anchor-link">
+						<button type='button'><span></span></button>
+						<span>Категории</span>
+					</a>
+					<form class="header__search">
+						<input type="text" placeholder='Введите запрос'>
+						<button type='submit' class="_icon-search"></button>
+					</form>
+				</div>
+				<div class="header__main">
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-box"></div>
+						<span>Заказы</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-heart"></div>
+						<span>Избранное</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="header__cart">
+							<div class="_icon-cart"></div>
+							<div class="header__count count">10</div>
+						</div>
+						<span>Корзина</span>
+					</a>
+					<a href="tel:+74996511743" class="header__link header__phone">
+						<div class="_icon-phone"></div>
+						<span>+7 (499) 651-17-43</span>
+					</a>
+					<a href="#popupAuth" class="header__auth popup-link">
+						<span>Войти</span>
+						<div class="_icon-user"></div>
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="header__location">
+					<div class="_icon-location"></div>
+					<span>Москва</span>
+				</div>
+				<div class="header__mobile">
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li><a class='active' href="./index.html">Главная</a></li>
+							<li><a href="./catalog.html">Каталог</a></li>
+							<li><a href="./production.html">Производство</a></li>
+							<li><a href="./landscaping.html">Благоустройство</a></li>
+							<li><a href="./installation.html">Установка</a></li>
+							<li><a href="./installation.html">Доставка</a></li>
+							<li><a href="./quiz.html">О нас</a></li>
+							<li><a href="./contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- /.header -->
+
+		<!-- .main -->
+		<main class="main">
+			<!-- .admin-products -->
+<section class="admin-products">
+	<div class="admin-products__container">
+		<div class="admin-products__body admin-body">
+			<!-- .admin-nav -->
+<div class="admin-nav">
+	<nav class="admin-nav__nav">
+		<ul class="admin-nav__list">
+			<li>
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12.7069 4.29303C12.5194 4.10556 12.2651 4.00024 11.9999 4.00024C11.7348 4.00024 11.4804 4.10556 11.2929 4.29303L4.29292 11.293C4.11076 11.4816 4.00997 11.7342 4.01224 11.9964C4.01452 12.2586 4.11969 12.5094 4.3051 12.6948C4.49051 12.8803 4.74132 12.9854 5.00352 12.9877C5.26571 12.99 5.51832 12.8892 5.70692 12.707L5.99992 12.414V19C5.99992 19.2652 6.10528 19.5196 6.29281 19.7071C6.48035 19.8947 6.7347 20 6.99992 20H8.99992C9.26514 20 9.51949 19.8947 9.70703 19.7071C9.89456 19.5196 9.99992 19.2652 9.99992 19V17C9.99992 16.7348 10.1053 16.4805 10.2928 16.2929C10.4803 16.1054 10.7347 16 10.9999 16H12.9999C13.2651 16 13.5195 16.1054 13.707 16.2929C13.8946 16.4805 13.9999 16.7348 13.9999 17V19C13.9999 19.2652 14.1053 19.5196 14.2928 19.7071C14.4803 19.8947 14.7347 20 14.9999 20H16.9999C17.2651 20 17.5195 19.8947 17.707 19.7071C17.8946 19.5196 17.9999 19.2652 17.9999 19V12.414L18.2929 12.707C18.4815 12.8892 18.7341 12.99 18.9963 12.9877C19.2585 12.9854 19.5093 12.8803 19.6947 12.6948C19.8801 12.5094 19.9853 12.2586 19.9876 11.9964C19.9899 11.7342 19.8891 11.4816 19.7069 11.293L12.7069 4.29303Z" />
+					</svg>
+					<span>Вернуться на сайт</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="" class='active'>
+					<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M6 6C5.46957 6 4.96086 6.21071 4.58579 6.58579C4.21071 6.96086 4 7.46957 4 8V12C4 12.5304 4.21071 13.0391 4.58579 13.4142C4.96086 13.7893 5.46957 14 6 14V8H16C16 7.46957 15.7893 6.96086 15.4142 6.58579C15.0391 6.21071 14.5304 6 14 6H6ZM8 12C8 11.4696 8.21071 10.9609 8.58579 10.5858C8.96086 10.2107 9.46957 10 10 10H18C18.5304 10 19.0391 10.2107 19.4142 10.5858C19.7893 10.9609 20 11.4696 20 12V16C20 16.5304 19.7893 17.0391 19.4142 17.4142C19.0391 17.7893 18.5304 18 18 18H10C9.46957 18 8.96086 17.7893 8.58579 17.4142C8.21071 17.0391 8 16.5304 8 16V12ZM14 16C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14C16 13.4696 15.7893 12.9609 15.4142 12.5858C15.0391 12.2107 14.5304 12 14 12C13.4696 12 12.9609 12.2107 12.5858 12.5858C12.2107 12.9609 12 13.4696 12 14C12 14.5304 12.2107 15.0391 12.5858 15.4142C12.9609 15.7893 13.4696 16 14 16Z" />
+					</svg>
+					<span>Заказы</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M20 12C20 14.1217 19.1571 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20C9.87827 20 7.84344 19.1571 6.34315 17.6569C4.84285 16.1566 4 14.1217 4 12C4 9.87827 4.84285 7.84344 6.34315 6.34315C7.84344 4.84285 9.87827 4 12 4C14.1217 4 16.1566 4.84285 17.6569 6.34315C19.1571 7.84344 20 9.87827 20 12ZM14 9C14 9.53043 13.7893 10.0391 13.4142 10.4142C13.0391 10.7893 12.5304 11 12 11C11.4696 11 10.9609 10.7893 10.5858 10.4142C10.2107 10.0391 10 9.53043 10 9C10 8.46957 10.2107 7.96086 10.5858 7.58579C10.9609 7.21071 11.4696 7 12 7C12.5304 7 13.0391 7.21071 13.4142 7.58579C13.7893 7.96086 14 8.46957 14 9ZM12 13C11.0426 12.9998 10.1053 13.2745 9.29942 13.7914C8.49356 14.3083 7.85304 15.0457 7.454 15.916C8.01668 16.5706 8.71427 17.0958 9.49894 17.4555C10.2836 17.8152 11.1368 18.0009 12 18C12.8632 18.0009 13.7164 17.8152 14.5011 17.4555C15.2857 17.0958 15.9833 16.5706 16.546 15.916C16.147 15.0457 15.5064 14.3083 14.7006 13.7914C13.8947 13.2745 12.9574 12.9998 12 13Z" />
+					</svg>
+
+					<span>Клиенты</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M13 19C13.0001 19.1704 13.0437 19.3379 13.1267 19.4867C13.2098 19.6355 13.3294 19.7607 13.4744 19.8502C13.6194 19.9398 13.7848 19.9908 13.955 19.9985C14.1252 20.0061 14.2946 19.9702 14.447 19.894L18.447 17.894C18.6131 17.811 18.7528 17.6834 18.8504 17.5255C18.9481 17.3676 18.9999 17.1857 19 17V11.236C18.9999 11.0656 18.9563 10.8981 18.8733 10.7493C18.7902 10.6005 18.6706 10.4754 18.5256 10.3858C18.3806 10.2963 18.2152 10.2452 18.045 10.2376C17.8748 10.2299 17.7054 10.2659 17.553 10.342L13.553 12.342C13.3869 12.425 13.2472 12.5526 13.1496 12.7105C13.0519 12.8684 13.0001 13.0504 13 13.236V19ZM17.211 8.27602C17.3769 8.19288 17.5164 8.06523 17.6138 7.90734C17.7113 7.74946 17.7629 7.56756 17.7629 7.38202C17.7629 7.19647 17.7113 7.01457 17.6138 6.85669C17.5164 6.69881 17.3769 6.57115 17.211 6.48802L12.447 4.10602C12.3082 4.03666 12.1552 4.00055 12 4.00055C11.8448 4.00055 11.6918 4.03666 11.553 4.10602L6.789 6.48802C6.62312 6.57115 6.48364 6.69881 6.38617 6.85669C6.28869 7.01457 6.23707 7.19647 6.23707 7.38202C6.23707 7.56756 6.28869 7.74946 6.38617 7.90734C6.48364 8.06523 6.62312 8.19288 6.789 8.27602L11.553 10.658C11.6918 10.7274 11.8448 10.7635 12 10.7635C12.1552 10.7635 12.3082 10.7274 12.447 10.658L17.211 8.27602ZM6.447 10.342C6.29458 10.2659 6.12522 10.2299 5.95501 10.2376C5.78479 10.2452 5.61935 10.2963 5.47439 10.3858C5.32944 10.4754 5.20977 10.6005 5.12674 10.7493C5.04372 10.8981 5.00009 11.0656 5 11.236V17C5.0001 17.1857 5.05188 17.3676 5.14955 17.5255C5.24722 17.6834 5.38692 17.811 5.553 17.894L9.553 19.894C9.70542 19.9702 9.87477 20.0061 10.045 19.9985C10.2152 19.9908 10.3806 19.9398 10.5256 19.8502C10.6706 19.7607 10.7902 19.6355 10.8733 19.4867C10.9563 19.3379 10.9999 19.1704 11 19V13.236C10.9999 13.0504 10.9481 12.8684 10.8504 12.7105C10.7528 12.5526 10.6131 12.425 10.447 12.342L6.447 10.342Z" />
+					</svg>
+
+					<span>Товары</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M4.58579 5.58579C4.21071 5.96086 4 6.46957 4 7V17C4 17.5304 4.21071 18.0391 4.58579 18.4142C4.96086 18.7893 5.46957 19 6 19H18C17.4696 19 16.9609 18.7893 16.5858 18.4142C16.2107 18.0391 16 17.5304 16 17V7C16 6.46957 15.7893 5.96086 15.4142 5.58579C15.0391 5.21071 14.5304 5 14 5H6C5.46957 5 4.96086 5.21071 4.58579 5.58579ZM13 8H7V12H13V8ZM7 14H13V16H7V14Z" />
+						<path
+							d="M18 9H17V16.5C17 16.8978 17.158 17.2794 17.4393 17.5607C17.7206 17.842 18.1022 18 18.5 18C18.8978 18 19.2794 17.842 19.5607 17.5607C19.842 17.2794 20 16.8978 20 16.5V11C20 10.4696 19.7893 9.96086 19.4142 9.58579C19.0391 9.21071 18.5304 9 18 9Z" />
+					</svg>
+
+					<span>Отзывы</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!-- /.admin-nav -->
+
+			<div class="admin-products__content admin-body__content">
+
+				<div class="admin-products__top">
+					<div class="admin-products__main">
+						<div class="admin-products__info">
+							<h1 class="admin-products__title">
+								Товары
+							</h1>
+							<div class="admin-products__total">
+								13215 товара
+							</div>
+						</div>
+						<p class="admin-products__text">
+							Управление товарами
+						</p>
+					</div>
+					<div class="admin-products__actions">
+						<a href="" class="admin-products__export admin-btn">
+							<img src="img/admin/orders/02.svg" alt="">
+							<span>Экспорт</span>
+						</a>
+						<button class="admin-orders__add btn">
+							<img src="img/admin/orders/03.svg" alt="">
+							<span>Новый платеж</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="admin-products__bottom">
+					<div class="admin-products__categories">
+						<a href="" class="admin-products__category active">
+							Металлические ограды
+						</a>
+						<a href="" class="admin-products__category">
+							Гранитные цоколя
+						</a>
+						<a href="" class="admin-products__category">
+							Мемориальный комплексы
+						</a>
+					</div>
+					<form class="admin-products__search">
+						<input type="text" placeholder='Поиск'>
+						<button class="_icon-search"></button>
+					</form>
+				</div>
+
+				<div class="admin-products__table">
+					<table>
+
+						<thead>
+							<th>
+								<div class="admin-products__name">
+									<div class="checkbox">
+										<input type="checkbox" id="check1">
+										<label for="check1">
+										</label>
+									</div>
+									<a href='' class='admin-products__flex'>
+										<span>Наименование</span>
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.99984 0.666664C6.36803 0.666664 6.6665 0.965141 6.6665 1.33333V9.05719L10.1951 5.52859C10.4554 5.26824 10.8776 5.26824 11.1379 5.52859C11.3983 5.78894 11.3983 6.21105 11.1379 6.4714L6.47124 11.1381C6.21089 11.3984 5.78878 11.3984 5.52843 11.1381L0.861766 6.4714C0.601417 6.21105 0.601417 5.78894 0.861766 5.52859C1.12212 5.26824 1.54423 5.26824 1.80458 5.52859L5.33317 9.05719V1.33333C5.33317 0.965141 5.63165 0.666664 5.99984 0.666664Z" />
+										</svg>
+									</a>
+								</div>
+							</th>
+							<th>Цена</th>
+							<th>Заказов</th>
+							<th>Управление</th>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>
+									<div class="admin-products__name">
+										<div class="checkbox">
+											<input type="checkbox" id="check2">
+											<label for="check2">
+											</label>
+										</div>
+										<div class="admin-products__flex">
+											<picture><source srcset="img/admin/products/01.webp" type="image/webp"><img src="img/admin/products/01.jpg" alt="Catalog"></picture>
+											<div class='admin-products__desc'>
+												<span>Catalog</span>
+												<span>catalogapp.io</span>
+											</div>
+										</div>
+								</td>
+								<td>
+									<div class="admin-products__price">
+										₽5900
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__dynamica admin-products__dynamica_positive">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.46967 1.96967C5.76256 1.67678 6.23744 1.67678 6.53033 1.96967L10.0303 5.46967C10.3232 5.76256 10.3232 6.23744 10.0303 6.53033C9.73744 6.82322 9.26256 6.82322 8.96967 6.53033L6.75 4.31066V9.5C6.75 9.91421 6.41421 10.25 6 10.25C5.58579 10.25 5.25 9.91421 5.25 9.5V4.31066L3.03033 6.53033C2.73744 6.82322 2.26256 6.82322 1.96967 6.53033C1.67678 6.23744 1.67678 5.76256 1.96967 5.46967L5.46967 1.96967Z" />
+										</svg>
+										<span>12</span>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__management">
+										<a href="">
+											<img src="img/admin/products/01.svg" alt="">
+										</a>
+										<a href="">
+											<img src="img/admin/products/02.svg" alt="">
+										</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="admin-products__name">
+										<div class="checkbox">
+											<input type="checkbox" id="check3">
+											<label for="check3">
+
+											</label>
+										</div>
+										<div class="admin-products__flex">
+											<picture><source srcset="img/admin/products/01.webp" type="image/webp"><img src="img/admin/products/01.jpg" alt="Catalog"></picture>
+											<div class='admin-products__desc'>
+												<span>Catalog</span>
+												<span>catalogapp.io</span>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__price">
+										₽5900
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__dynamica admin-products__dynamica_negative">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.46967 1.96967C5.76256 1.67678 6.23744 1.67678 6.53033 1.96967L10.0303 5.46967C10.3232 5.76256 10.3232 6.23744 10.0303 6.53033C9.73744 6.82322 9.26256 6.82322 8.96967 6.53033L6.75 4.31066V9.5C6.75 9.91421 6.41421 10.25 6 10.25C5.58579 10.25 5.25 9.91421 5.25 9.5V4.31066L3.03033 6.53033C2.73744 6.82322 2.26256 6.82322 1.96967 6.53033C1.67678 6.23744 1.67678 5.76256 1.96967 5.46967L5.46967 1.96967Z" />
+										</svg>
+										<span>12</span>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__management">
+										<a href="">
+											<img src="img/admin/products/01.svg" alt="">
+										</a>
+										<a href="">
+											<img src="img/admin/products/02.svg" alt="">
+										</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="admin-products__name">
+										<div class="checkbox">
+											<input type="checkbox" id="check4">
+											<label for="check4">
+
+											</label>
+										</div>
+										<div class="admin-products__flex">
+											<picture><source srcset="img/admin/products/01.webp" type="image/webp"><img src="img/admin/products/01.jpg" alt="Catalog"></picture>
+											<div class='admin-products__desc'>
+												<span>Catalog</span>
+												<span>catalogapp.io</span>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__price">
+										₽5900
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__dynamica admin-products__dynamica_negative">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.46967 1.96967C5.76256 1.67678 6.23744 1.67678 6.53033 1.96967L10.0303 5.46967C10.3232 5.76256 10.3232 6.23744 10.0303 6.53033C9.73744 6.82322 9.26256 6.82322 8.96967 6.53033L6.75 4.31066V9.5C6.75 9.91421 6.41421 10.25 6 10.25C5.58579 10.25 5.25 9.91421 5.25 9.5V4.31066L3.03033 6.53033C2.73744 6.82322 2.26256 6.82322 1.96967 6.53033C1.67678 6.23744 1.67678 5.76256 1.96967 5.46967L5.46967 1.96967Z" />
+										</svg>
+										<span>12</span>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__management">
+										<a href="">
+											<img src="img/admin/products/01.svg" alt="">
+										</a>
+										<a href="">
+											<img src="img/admin/products/02.svg" alt="">
+										</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="admin-products__name">
+										<div class="checkbox">
+											<input type="checkbox" id="check5">
+											<label for="check5">
+
+											</label>
+										</div>
+										<div class="admin-products__flex">
+											<picture><source srcset="img/admin/products/01.webp" type="image/webp"><img src="img/admin/products/01.jpg" alt="Catalog"></picture>
+											<div class='admin-products__desc'>
+												<span>Catalog</span>
+												<span>catalogapp.io</span>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__price">
+										₽5900
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__dynamica admin-products__dynamica_negative">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.46967 1.96967C5.76256 1.67678 6.23744 1.67678 6.53033 1.96967L10.0303 5.46967C10.3232 5.76256 10.3232 6.23744 10.0303 6.53033C9.73744 6.82322 9.26256 6.82322 8.96967 6.53033L6.75 4.31066V9.5C6.75 9.91421 6.41421 10.25 6 10.25C5.58579 10.25 5.25 9.91421 5.25 9.5V4.31066L3.03033 6.53033C2.73744 6.82322 2.26256 6.82322 1.96967 6.53033C1.67678 6.23744 1.67678 5.76256 1.96967 5.46967L5.46967 1.96967Z" />
+										</svg>
+										<span>12</span>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__management">
+										<a href="">
+											<img src="img/admin/products/01.svg" alt="">
+										</a>
+										<a href="">
+											<img src="img/admin/products/02.svg" alt="">
+										</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="admin-products__name">
+										<div class="checkbox">
+											<input type="checkbox" id="check6">
+											<label for="check6">
+
+											</label>
+										</div>
+										<div class="admin-products__flex">
+											<picture><source srcset="img/admin/products/01.webp" type="image/webp"><img src="img/admin/products/01.jpg" alt="Catalog"></picture>
+											<div class='admin-products__desc'>
+												<span>Catalog</span>
+												<span>catalogapp.io</span>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__price">
+										₽5900
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__dynamica admin-products__dynamica_negative">
+										<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.46967 1.96967C5.76256 1.67678 6.23744 1.67678 6.53033 1.96967L10.0303 5.46967C10.3232 5.76256 10.3232 6.23744 10.0303 6.53033C9.73744 6.82322 9.26256 6.82322 8.96967 6.53033L6.75 4.31066V9.5C6.75 9.91421 6.41421 10.25 6 10.25C5.58579 10.25 5.25 9.91421 5.25 9.5V4.31066L3.03033 6.53033C2.73744 6.82322 2.26256 6.82322 1.96967 6.53033C1.67678 6.23744 1.67678 5.76256 1.96967 5.46967L5.46967 1.96967Z" />
+										</svg>
+										<span>12</span>
+									</div>
+								</td>
+								<td>
+									<div class="admin-products__management">
+										<a href="">
+											<img src="img/admin/products/01.svg" alt="">
+										</a>
+										<a href="">
+											<img src="img/admin/products/02.svg" alt="">
+										</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+
+					</table>
+				</div>
+
+				<div class="admin-orders__pagination admin-pagination">
+					<div class="admin-pagination__pages">
+						Страница <span>1</span> из <span>15</span>
+					</div>
+					<div class="admin-pagination__btns">
+						<a href="" class="admin-pagination__btn">
+							Предыдущая
+						</a>
+						<a href="" class="admin-pagination__btn">
+							Следующая
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /.admin-orders -->
+		</main>
+		<!-- /.main -->
+
+		<!-- .footer -->
+<footer class="footer">
+	
+	<div class="footer__top top-footer">
+		<div class="top-footer__container">
+			<div class="top-footer__body">
+				<div class="top-footer__main">
+					<div class="top-footer__logo">
+						<picture><source srcset="img/logo_white.webp" type="image/webp"><img src="img/logo_white.png" alt="NBS Granit"></picture>
+					</div>
+					<p class="top-footer__text">
+						ИЗГОТОВЛЕНИЕ ПАМЯТНИКОВ И МЕМОРИАЛЬНЫХ КОМПЛЕКСОВ ИЗ ГРАНИТА
+					</p>
+				</div>
+				<nav class="top-footer__nav">
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Меню
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Главная</a></li>
+							<li><a href="">Каталог</a></li>
+							<li><a href="">
+								Solutions 
+								<span class='top-footer__new'>
+									New
+								</span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Компания
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">О нас</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Доставка и оплата
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Установка</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Категории
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Металлические ограды</a></li>
+							<li><a href="">Гранитные цоколя</a></li>
+							<li><a href="">Мемориальные комплексы</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom bottom-footer">
+		<div class="bottom-footer__container">
+			<div class="bottom-footer__body">
+				<div class="bottom-footer__copyright">
+					© 2023 NBS Granit. All rights reserved.
+				</div>
+				<a href="" class="bottom-footer__privacy">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<!-- /.footer -->
+	</div>
+
+	<div class="popup popup-enter" id="popupAuth">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Личный кабинет
+			</div>
+			<p class="popup-enter__text">
+				Добро пожаловать, введите данные, чтобы войти в личный кабинет.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Email</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<div class='popup-enter__flex'>
+						<div>Пароль</div>
+						<a href='' class='popup-enter__recovery'>
+							Забыли пароль?
+						</a>
+					</div>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пожалуйста введите пароль
+					</div>
+				</div>
+				<div class="popup-enter__checkbox">
+					<input value='' type="checkbox" id="rememberMe">
+					<label for="rememberMe">
+						<span>Запомнить меня</span>
+					</label>
+				</div>
+				<button class="popup-enter__submit btn">
+					Войти
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Нет аккаунта? <a href="#popupReg" class='popup-link'>Зарегистрироваться</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="popup popup-enter" id="popupReg">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Регистрация
+			</div>
+			<p class="popup-enter__text">
+				Введите свои данные, чтобы зарегистрироваться.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Ваше имя</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваш телефон</p>
+					<div class="popup-enter__input">
+						<input value='' type="tel" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваша почта</p>
+					<div class="popup-enter__input">
+						<input value='' type="email" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Введите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Повторите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пароли не совпадают
+					</div>
+				</div>
+				<button class="popup-enter__submit btn">
+					Регистрация
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Уже есть аккаунт? <a href="#popupAuth" class='popup-link'>Войти</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230320225622"></script>
+	<script src="js/app.min.js?_v=20230320225622"></script>
+</body>
+
+</html>

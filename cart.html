@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Корзина</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230320225622" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230320225622">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- .header -->
+<header class="header">
+	<div class="header__container">
+		<div class="header__body">
+
+			<div class="header__top">
+				<div class="header__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+				</div>
+				<div class="header__actions">
+					<a href='#categories' class="header__anchor anchor-link">
+						<button type='button'><span></span></button>
+						<span>Категории</span>
+					</a>
+					<form class="header__search">
+						<input type="text" placeholder='Введите запрос'>
+						<button type='submit' class="_icon-search"></button>
+					</form>
+				</div>
+				<div class="header__main">
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-box"></div>
+						<span>Заказы</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="_icon-heart"></div>
+						<span>Избранное</span>
+					</a>
+					<a href="./cart.html" class="header__link">
+						<div class="header__cart">
+							<div class="_icon-cart"></div>
+							<div class="header__count count">10</div>
+						</div>
+						<span>Корзина</span>
+					</a>
+					<a href="tel:+74996511743" class="header__link header__phone">
+						<div class="_icon-phone"></div>
+						<span>+7 (499) 651-17-43</span>
+					</a>
+					<a href="#popupAuth" class="header__auth popup-link">
+						<span>Войти</span>
+						<div class="_icon-user"></div>
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom">
+				<div class="header__location">
+					<div class="_icon-location"></div>
+					<span>Москва</span>
+				</div>
+				<div class="header__mobile">
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li><a class='active' href="./index.html">Главная</a></li>
+							<li><a href="./catalog.html">Каталог</a></li>
+							<li><a href="./production.html">Производство</a></li>
+							<li><a href="./landscaping.html">Благоустройство</a></li>
+							<li><a href="./installation.html">Установка</a></li>
+							<li><a href="./installation.html">Доставка</a></li>
+							<li><a href="./quiz.html">О нас</a></li>
+							<li><a href="./contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- /.header -->
+
+		<!-- .main -->
+		<main class="main">
+			<!-- .cart -->
+<div class="cabinet">
+	<div class="cabinet__container">
+		<div class="cabinet__body">
+
+			<div class="cabinet__header">
+				<div class="cabinet__title">
+					Личный кабинет
+				</div>
+				<nav class="cabinet__nav">
+					<ul class="cabinet__list">
+						<li><a href="./profile.html">Профиль</a></li>
+						<li><a class='active' href="./cart.html">Корзина</a></li>
+
+					</ul>
+				</nav>
+			</div>
+			<div class="cabinet__content">
+				<div class="cart__table">
+					<div class="cart__row cart__header">
+						<div class="cart__th">Мероприятие</div>
+						<div class="cart__th">Дата</div>
+						<div class="cart__th">Стомость</div>
+						<div class="cart__th">Количество</div>
+						<div class="cart__th">Действие</div>
+						<div class="cart__th">Статус</div>
+					</div>
+					<div class="cart__row">
+						<div class="cart__td">DJI Phantom 4 Multispectral</div>
+						<div class="cart__td">15 июня  2021</div>
+						<div class="cart__td">3000₽</div>
+						<div class="cart__td">1</div>
+						<div class="cart__td">
+							<a href="">Удалить</a>
+						</div>
+						<div class="cart__td">
+							<div class="cart__status _icon-checkbox" style='background-color: #ADF1A7;'></div>
+						</div>
+					</div>
+					<div class="cart__row">
+						<div class="cart__td">DJI Phantom 4 PRO</div>
+						<div class="cart__td">15 июня  2021</div>
+						<div class="cart__td">
+							<a href="tel:+74996511743">Связаться с менеджером</a>
+						</div>
+						<div class="cart__td">1</div>
+						<div class="cart__td">
+							<a href="">Удалить</a>
+						</div>
+						<div class="cart__td">
+							<div class="cart__status _icon-checkbox" style='background-color: #ADF1A7'></div>
+						</div>
+					</div>
+					<div class="cart__row">
+						<div class="cart__td">Мемориальный комплекс mk-32 </div>
+						<div class="cart__td">15 июня  2021</div>
+						<div class="cart__td">3000₽</div>
+						<div class="cart__td">1</div>
+						<div class="cart__td">
+							<a href="">Удалить</a>
+						</div>
+						<div class="cart__td">
+							<div class="cart__status _icon-checkbox" style='background-color: #ADF1A7;'></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- /.cart -->
+		</main>
+		<!-- /.main -->
+
+		<!-- .footer -->
+<footer class="footer">
+	
+	<div class="footer__top top-footer">
+		<div class="top-footer__container">
+			<div class="top-footer__body">
+				<div class="top-footer__main">
+					<div class="top-footer__logo">
+						<picture><source srcset="img/logo_white.webp" type="image/webp"><img src="img/logo_white.png" alt="NBS Granit"></picture>
+					</div>
+					<p class="top-footer__text">
+						ИЗГОТОВЛЕНИЕ ПАМЯТНИКОВ И МЕМОРИАЛЬНЫХ КОМПЛЕКСОВ ИЗ ГРАНИТА
+					</p>
+				</div>
+				<nav class="top-footer__nav">
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Меню
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Главная</a></li>
+							<li><a href="">Каталог</a></li>
+							<li><a href="">
+								Solutions 
+								<span class='top-footer__new'>
+									New
+								</span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Компания
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">О нас</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Доставка и оплата
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Установка</a></li>
+						</ul>
+					</div>
+					<div class="top-footer__block">
+						<div class="top-footer__title">
+							Категории
+						</div>
+						<ul class="top-footer__list">
+							<li><a href="">Металлические ограды</a></li>
+							<li><a href="">Гранитные цоколя</a></li>
+							<li><a href="">Мемориальные комплексы</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom bottom-footer">
+		<div class="bottom-footer__container">
+			<div class="bottom-footer__body">
+				<div class="bottom-footer__copyright">
+					© 2023 NBS Granit. All rights reserved.
+				</div>
+				<a href="" class="bottom-footer__privacy">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<!-- /.footer -->
+	</div>
+
+	<div class="popup popup-enter" id="popupAuth">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Личный кабинет
+			</div>
+			<p class="popup-enter__text">
+				Добро пожаловать, введите данные, чтобы войти в личный кабинет.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Email</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<div class='popup-enter__flex'>
+						<div>Пароль</div>
+						<a href='' class='popup-enter__recovery'>
+							Забыли пароль?
+						</a>
+					</div>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пожалуйста введите пароль
+					</div>
+				</div>
+				<div class="popup-enter__checkbox">
+					<input value='' type="checkbox" id="rememberMe">
+					<label for="rememberMe">
+						<span>Запомнить меня</span>
+					</label>
+				</div>
+				<button class="popup-enter__submit btn">
+					Войти
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Нет аккаунта? <a href="#popupReg" class='popup-link'>Зарегистрироваться</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="popup popup-enter" id="popupReg">
+	<div class="popup__body popup-enter__body">
+		<div class="popup__content popup-enter__content">
+
+			<div class="popup-enter__logo">
+				<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="NBSGranit"></picture>
+			</div>
+			<div class="popup-enter__title">
+				Регистрация
+			</div>
+			<p class="popup-enter__text">
+				Введите свои данные, чтобы зарегистрироваться.
+			</p>
+
+			<form class="popup-enter__form">
+				<div class="popup-enter__item">
+					<p>Ваше имя</p>
+					<div class="popup-enter__input">
+						<input value='' type="text">
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваш телефон</p>
+					<div class="popup-enter__input">
+						<input value='' type="tel" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Ваша почта</p>
+					<div class="popup-enter__input">
+						<input value='' type="email" data-tel-input>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Введите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+				</div>
+				<div class="popup-enter__item">
+					<p>Повторите пароль</p>
+					<div class="popup-enter__input popup-enter__password js-input-password">
+						<input value='' type="password">
+						<div class="popup-enter__eye js-input-password__eye"></div>
+					</div>
+					<div class="popup-enter__error" style='display: none;'>
+						Пароли не совпадают
+					</div>
+				</div>
+				<button class="popup-enter__submit btn">
+					Регистрация
+				</button>
+			</form>
+
+			<div class="popup-enter__oauth">
+				<div class="popup-enter__or">
+					<span>или</span>
+				</div>
+				<a href="" class="popup-enter__google">
+					<img src="img/popups/google.svg" alt="Google">
+					<span>Google</span>
+				</a>
+			</div>
+
+			<div class="popup-enter__bottom">
+				Уже есть аккаунт? <a href="#popupAuth" class='popup-link'>Войти</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230320225622"></script>
+	<script src="js/app.min.js?_v=20230320225622"></script>
+</body>
+
+</html>
