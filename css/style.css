@@ -2088,11 +2088,8 @@ body.lock {
 	margin-top: 12px;
 }
 
-.no-webp .catalog-products {
-	background-image: url(../img/index/products/04.jpg);
-}
-
 .catalog-products {
+	background-image: url(../img/index/products/04.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -5102,8 +5099,4 @@ body.lock {
 		background-color: #4d904f;
 		border-color: #4d904f;
 	}
-}
-
-.webp .catalog-products {
-	background-image: url(../img/index/products/04.webp);
 }
